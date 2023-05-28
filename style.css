@@ -1,0 +1,1257 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'one_pieceregular';
+    src: url('font/one_piece_font-webfont.woff2') format('woff2'),
+         url('font/one_piece_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    /* background-image: url(./fondOP.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: 'one_pieceregular';
+}
+
+.menu
+{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+button
+{
+    scale: 1.5;
+    background-color: blue;
+    border: 0px;
+    position: absolute;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 13;
+}
+
+button:hover
+{
+    background-color: darkblue;
+    padding: 2px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+
+}
+
+#btnacc
+{
+    top: 25px;
+    left: 20%;
+}
+
+#btndas
+{
+    top: 25px;
+    left: 50%;
+}
+
+#btncel
+{
+    top: 25px;
+    left: 80%;
+}
+
+.accueil
+{
+    visibility: hidden;
+}
+
+.celebrite
+{
+    visibility: hidden;
+}
+
+h2
+{
+    color: rgb(188, 20, 14);
+    text-shadow: 5px 0 0 rgba(0, 0, 0, 0.559);
+    font-size: 75px;
+    text-decoration: underline;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animeDebut 2s;
+}
+
+@keyframes animeDebut
+{
+    0%{
+        top: 110px;
+    }
+    100%{
+        top: 70px;
+    }
+}
+
+.diagrammeCirculaire
+{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(211, 182, 206, 0.6);
+    border: rgb(79, 74, 74) 2px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.diagrammeLineaire
+{
+    height: 200px;
+    width: 400px;
+    background-color: rgba(211, 182, 206, 0.6);
+    border: rgb(79, 74, 74) 2px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 575px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.diagrammeBaton
+{
+    height: 150px;
+    width: 300px;
+    background-color: rgba(211, 182, 206, 0.6);
+    border: rgb(79, 74, 74) 2px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 850px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+
+.diagrammeDoughnut
+{
+    height: 210px;
+    width: 200px;
+    background-color: rgba(211, 182, 206, 0.6);
+    border: rgb(79, 74, 74) 2px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 1550px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.ddoughtnut
+{
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+.emploieTemps
+{
+    height: 500px;
+    width: 400px;
+    background-color: rgba(206, 190, 190, 0.971);
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 1000px;
+    right: 50%;
+    transform: translateX(50%);
+    font-family: monospace;
+    color:rgb(0, 0, 0);
+}
+
+.titreEmploieTemps
+{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 40px;
+    width: 320px;
+    padding: 20px;
+    position: absolute;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    background-color: rgb(13, 123, 3);
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+.day
+{
+    height: 100px;
+    width: 80px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    position: absolute;
+    background-color: aliceblue;
+    font-size: medium;
+}
+
+h6
+{
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.lundi
+{
+    top: 120px;
+    left: 30px;
+}
+
+.lundi:hover
+{
+    scale: 1.3;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.mardi
+{
+    top: 120px;
+    left: 150px;
+}
+
+.mardi:hover
+{
+    scale: 1.3;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.mercredi
+{
+    top: 120px;
+    left: 270px;
+}
+
+.mercredi:hover
+{
+    scale: 1.3;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.jeudi
+{
+    top: 245px;
+    left: 30px;
+}
+
+.jeudi:hover
+{
+    scale: 1.3;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.vendredi
+{
+    top: 245px;
+    left: 150px;
+}
+
+.vendredi:hover
+{
+    scale: 1.3;
+    background-color: black;
+    color: rgb(255, 254, 251);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.samedi
+{
+    top: 245px;
+    left: 270px;
+}
+
+.samedi:hover
+{
+    scale: 1.3;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.dimanche
+{
+    top: 370px;
+    left: 30px;
+}
+
+.dimanche:hover
+{
+    scale: 1.3;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.diagrammeMap
+{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(211, 182, 206, 0.6);
+    border: rgb(79, 74, 74) 2px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 1075px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.titreDiagrammeMap
+{
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    font-family: monospace;
+    font-size: 13px;
+    text-decoration: underline;
+
+}
+
+.carre200
+{
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    background-color: rgba(223, 14, 108, 0.75);
+    height: 15px;
+    width: 15px;
+}
+.carre400
+{
+    position: absolute;
+    top: 350px;
+    left: 85px;
+    background-color: rgba(169, 7, 156, 0.75);
+    height: 15px;
+    width: 15px;
+}
+.carre600
+{
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    background-color: rgba(125, 17, 157, 0.75);
+    height: 15px;
+    width: 15px;
+}
+.carre800
+{
+    position: absolute;
+    top: 350px;
+    left: 55px;
+    background-color: rgba(86, 5, 110, 0.75);
+    height: 15px;
+    width: 15px;
+}
+
+.f200
+{
+    position: absolute;
+    top: 350px;
+    left: 120px;
+    font-size: small;
+    font-family: monospace;
+}
+.f800
+{
+    position: absolute;
+    top: 350px;
+    left: 5px;
+    font-size: small;
+    font-family: monospace;
+}
+
+.map path{
+    stroke: rgb(233, 205, 228);
+    stroke-width: 1px;
+}
+
+#FR-GES
+{
+    fill: rgba(169, 7, 156, 0.75);
+    transition: fill 0.3s;
+}
+
+#FR-NAQ
+{
+    fill: rgba(86, 5, 110, 0.75);
+}
+
+#FR-ARA
+{
+    fill: rgba(134, 8, 119, 0.75);
+}
+
+#FR-BFC
+{
+    fill: rgba(223, 14, 108, 0.75);
+}
+
+#FR-BRE
+{
+    fill: rgba(122, 9, 156, 0.75);
+}
+
+#FR-CVL
+{
+    fill: rgba(171, 9, 106, 0.75);
+}
+
+#FR-COR
+{
+    fill: rgba(125, 17, 157, 0.75);
+}
+
+#FR-IDF
+{
+    fill: rgba(117, 3, 117, 0.75);
+}
+
+#FR-OCC
+{
+    fill: rgba(162, 10, 145, 0.75);
+}
+
+#FR-HDF
+{
+    fill: rgba(111, 7, 143, 0.75);
+}
+
+#FR-NOR
+{
+    fill: rgba(198, 8, 157, 0.75);
+}
+
+#FR-PDL
+{
+    fill: rgba(146, 19, 99, 0.75);
+}
+
+#FR-PAC
+{
+    fill: rgba(139, 13, 146, 0.75);
+}
+
+/* -----------hover------------- */
+
+#FR-GES:hover
+{
+    fill: rgba(169, 7, 156, 1);
+    transition: fill 0.3s;
+}
+
+#FR-NAQ:hover
+{
+    fill: rgba(86, 5, 110, 1);
+    transition: fill 0.3s;
+}
+
+#FR-ARA:hover
+{
+    fill: rgba(134, 8, 119, 1);
+    transition: fill 0.3s;
+}
+
+#FR-BFC:hover
+{
+    fill: rgba(223, 14, 108, 1);
+    transition: fill 0.3s;
+}
+
+#FR-BRE:hover
+{
+    fill: rgba(122, 9, 156, 1);
+    transition: fill 0.3s;
+}
+
+#FR-CVL:hover
+{
+    fill: rgba(171, 9, 106, 1);
+    transition: fill 0.3s;
+}
+
+#FR-COR:hover
+{
+    fill: rgba(125, 17, 157, 1);
+    transition: fill 0.3s;
+}
+
+#FR-IDF:hover
+{
+    fill: rgba(117, 3, 117, 1);
+    transition: fill 0.3s;
+}
+
+#FR-OCC:hover
+{
+    fill: rgba(162, 10, 145, 1);
+    transition: fill 0.3s;
+}
+
+#FR-HDF:hover
+{
+    fill: rgba(111, 7, 143, 1);
+    transition: fill 0.3s;
+}
+
+#FR-NOR:hover
+{
+    fill: rgba(198, 8, 157, 1);
+    transition: fill 0.3s;
+}
+
+#FR-PDL:hover
+{
+    fill: rgba(146, 19, 99, 1);
+    transition: fill 0.3s;
+}
+
+#FR-PAC:hover
+{
+    fill: rgba(139, 13, 146, 1);
+    transition: fill 0.3s;
+}
+
+.GE
+{
+    height: 18px;
+    width: 34px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 90px;
+    right: 90px;
+    opacity: 0;
+}
+
+.h4GE
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreGE
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(169, 7, 156, 1);
+}
+
+.NA
+{
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 210px;
+    right: 230px;
+    opacity: 0;
+}
+
+.h4NA
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreNA
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(86, 5, 110, 1);
+    position: absolute;
+    top: 20px;
+}
+
+.pNA
+{
+    position: absolute;
+    top: 29px;
+}
+
+.AR
+{
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 210px;
+    right: 120px;
+    opacity: 0;
+}
+
+.h4AR
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreAR
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(134, 8, 119, 1);
+    position: absolute;
+    top: 20px;
+}
+
+.pAR
+{
+    position: absolute;
+    top: 29px;
+}
+
+.BF
+{
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 140px;
+    right: 100px;
+    opacity: 0;
+}
+
+.h4BF
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreBF
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(223, 14, 108, 1);
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.pBF
+{
+    position: absolute;
+    top: 29px;
+}
+
+.BR
+{
+    height: 22px;
+    width: 34px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 110px;
+    right: 320px;
+    opacity: 0;
+}
+
+.h4BR
+{
+    position: absolute;
+    top: 1px;
+}
+
+.carreBR
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(122, 9, 156, 1);
+    position: absolute;
+    top: 10px;
+}
+
+.pBR
+{
+    position: absolute;
+    top: 20px;
+}
+
+.CV
+{
+    height: 28px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 130px;
+    right: 190px;
+    opacity: 0;
+}
+
+.h4CV
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreCV
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(171, 9, 106, 1);
+    position: absolute;
+    top: 20px;
+}
+
+.pCV
+{
+    position: absolute;
+    top: 29px;
+}
+
+.CO
+{
+    height: 22px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 320px;
+    right: 10px;
+    scale: 0.9;
+    opacity: 0;
+}
+
+.h4CO
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreCO
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(125, 17, 157, 1);
+    position: absolute;
+    top: 10px;
+}
+
+.pCO
+{
+    position: absolute;
+    top: 20px;
+}
+
+.ID
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 80px;
+    right: 170px;
+    scale: 0.8;
+    opacity: 0;
+}
+
+.h4ID
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreID
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(117, 3, 117, 1);
+    position: absolute;
+    top: 20px;
+}
+
+.pID
+{
+    position: absolute;
+    top: 30px;
+}
+
+.OC
+{
+    height: 22px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 280px;
+    right: 185px;
+    opacity: 0;
+}
+
+.h4OC
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreOC
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(162, 10, 145, 1);
+    position: absolute;
+    top: 10px;
+}
+
+.pOC
+{
+    position: absolute;
+    top: 20px;
+}
+
+.HD
+{
+    height: 32px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 30px;
+    right: 160px;
+    opacity: 0;
+}
+
+.h4HD
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreHD
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(111, 7, 143, 1);
+    position: absolute;
+    top: 20px;
+}
+
+.pHD
+{
+    position: absolute;
+    top: 30px;
+}
+
+.NO
+{
+    height: 22px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 70px;
+    right: 240px;
+    opacity: 0;
+}
+
+.h4NO
+{
+    position: absolute;
+    top: 0;
+}
+
+.carreNO
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(198, 8, 157, 1);
+    position: absolute;
+    top: 10px;
+}
+
+.pNO
+{
+    position: absolute;
+    top: 20px;
+}
+
+.PD
+{
+    height: 32px;
+    width: 38px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 130px;
+    right: 250px;
+    scale: 0.9;
+    opacity: 0;
+}
+
+.h4PD
+{
+    position: absolute;
+    top: 0;
+}
+
+.carrePD
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(146, 19, 99, 1);
+    position: absolute;
+    top: 20px;
+}
+
+.pPD
+{
+    position: absolute;
+    top: 30px;
+}
+
+.PA
+{
+    height: 32px;
+    width: 38px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    color:white;
+    font-family: monospace;
+    font-size: 8px;
+    top: 280px;
+    right: 70px;
+    opacity: 0;
+}
+
+.h4PA
+{
+    position: absolute;
+    top: 0;
+}
+
+.carrePA
+{
+    height: 7px;
+    width: 7px;
+    border: 1px solid white;
+    background-color: rgba(139, 13, 146, 1);
+    position: absolute;
+    top: 20px;
+}
+
+.pPA
+{
+    position: absolute;
+    top: 30px;
+}
+
+.imgaccueilop
+{
+    height: 300px;
+    border: black solid 2px;
+    border-radius: 25px;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 840px)
+{
+    .diagrammeCirculaire
+    {
+        scale: 0.8;
+    }
+    .diagrammeBaton
+    {
+        top: 160px;
+        right: 100px;
+        scale: 0.8;
+    }
+    .diagrammeLineaire
+    {
+        top: 140px;
+        left: 70px;
+        scale: 0.6;
+    }
+    .diagrammeDoughnut
+    {
+        top: 400px;
+        right: 130px;
+        scale: 0.9;
+    }
+    .diagrammeMap
+    {
+        top: 280px;
+        left: 70px;
+        scale: 0.6;
+    }
+    .emploieTemps
+    {
+        top: 900px;
+    }
+    .imgaccueilop
+    {
+        top: 525px;
+    }
+}
+
+@media screen and (min-width: 1040px)
+{
+    .diagrammeCirculaire
+    {
+        scale: 1;
+    }
+    .diagrammeBaton
+    {
+        top: 160px;
+        right: 200px;
+        scale: 1.1;
+    }
+    .diagrammeLineaire
+    {
+        top: 140px;
+        left: 150px;
+        scale: 0.8;
+    }
+    .diagrammeDoughnut
+    {
+        top: 400px;
+        right: 200px;
+        scale: 1.1;
+    }
+    .diagrammeMap
+    {
+        top: 300px;
+        left: 120px;
+        scale: 0.7;
+    }
+}
+
+@media screen and (min-width: 1240px)
+{
+    .diagrammeBaton
+    {
+        top: 160px;
+        right: 270px;
+        scale: 1.3;
+    }
+    .diagrammeLineaire
+    {
+        top: 120px;
+        left: 190px;
+    }
+    .diagrammeDoughnut
+    {
+        top: 400px;
+        right: 270px;
+        scale: 1.3;
+    }
+    .diagrammeMap
+    {
+        top: 300px;
+        left: 170px;
+        scale: 0.8;
+    }
+    .emploieTemps
+    {
+        top: 350px;
+        right: 280px;
+        scale: 0.8;
+    }
+    .imgaccueilop
+    {
+        top: 450px;
+        left: 340px;
+    }
+}
+
+@media screen and (min-width: 1400px)
+{
+    .diagrammeBaton
+    {
+        top: 160px;
+        right: 330px;
+        scale: 1.3;
+    }
+    .diagrammeLineaire
+    {
+        top: 70px;
+        left: 240px;
+    }
+    .diagrammeDoughnut
+    {
+        top: 430px;
+        right: 330px;
+        scale: 1.3;
+    }
+    .diagrammeMap
+    {
+        scale: 1;
+        top: 300px;
+        left: 300px;
+    }
+    .emploieTemps
+    {
+        right: 400px;
+        scale: 0.8;
+    }
+    .imgaccueilop
+    {
+        left: 450px;
+    }
+}
+
+.textAccueil
+{
+    position: absolute;
+    top: 200px;
+    width: 70%;
+    border: 2px solid black;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+}
+
+.oda
+{
+    border: 2px black solid;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 500px;
+    font-family: monospace;
+}
+
+table
+{
+    position: absolute;
+    top: 250px;
+    font-family: monospace;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#imgOda
+{
+    height: 120px;
+    margin-top: 4px;
+}
+
+#imgmontcorvo
+{
+    height: 120px;
+    margin-top: 4px;
+}
+
+#imgacteurluffy
+{
+    height: 120px;
+    margin-top: 4px;
+}
+
+#imgsportifOp
+{
+    height: 120px;
+    width: 150px;
+    margin-top: 4px;
+}
